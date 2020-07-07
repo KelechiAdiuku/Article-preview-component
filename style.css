@@ -1,0 +1,239 @@
+
+
+body {
+  font-family: 'Roboto';
+  font-size: 12px;
+  background-color: #EDF2F8;
+  background-size: cover;
+  background-position: top center;
+  text-align: justify;
+
+}
+
+.row-wrap {
+  background-color: #ffffff;
+  border-style: hidden;
+  border-radius: 10px 10px 10px 10px;
+  width: 650px;
+  height: 250px;
+  margin: 150px 300px;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 250px auto;
+  grid-gap: 20px;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-style: hidden;
+  border-radius: 10px 0px 0px 10px;
+
+}
+
+.right{
+  padding-right: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: #474F62;
+}
+
+.bottom-right {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  grid-gap: 5px;
+
+}
+
+.avartarname {
+padding-top: 5px;
+font-size: 10px;
+line-height: 1.6;
+}
+
+.avartarname .name {
+  font-weight: bold;
+}
+
+
+img.newimg{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-style: hidden;
+  border-radius: 50%;
+}
+
+h2 {
+
+  weight: 700px;
+  font-size: 20px;
+  text-align: left;
+  color: #474F62;
+
+}
+
+.socialshare {
+    width: 30px;
+    height: 30px;
+    background: hsl(217, 19%, 35%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.socialshare .tooltiptext{
+   visibility: hidden;
+   width: 200px;
+   height: 30px;
+   background-color: hsl(217, 19%, 35%);
+   border-radius: 6px 6px 6px 6px;
+   padding: 2px 0;
+   position: fixed;
+   z-index: 0;
+   left: 800px;
+   top: 300px;
+   color: hsl(214, 17%, 51%);
+   letter-spacing: 2px;
+   margin-bottom: 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   transition: 0.5s;
+}
+
+
+ .socialshare:hover .tooltiptext {
+   visibility: visible;
+ }
+ .tooltiptext span {
+     margin-left: 10px;
+     padding-top: 1px;
+ }
+
+.tooltiptext a {
+  text-decoration: none;
+}
+
+.tooltiptext img {
+   width: 12px;
+   height: 12px;
+   margin: 0 5px;
+}
+
+.tooltiptext .sharetip {
+        display: none;
+    }
+
+img.icon {
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
+  border-style: hidden;
+  padding: 5px 5px 5px 5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .row-wrap {
+    background-color: #ffffff;
+    border-style: hidden;
+    border-radius: 10px 10px 10px 10px;
+    width: 350px;
+    height: 450px;
+    margin: 30px auto;
+
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 5px;
+  }
+
+  img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    border-style: hidden;
+    border-radius: 10px 10px 0px 0px;
+
+  }
+
+  .right{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #474F62;
+  }
+
+  .bottom-right {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    grid-gap: 5px;
+
+  }
+
+  .socialshare {
+      width: 30px;
+      height: 30px;
+      background: hsl(217, 19%, 35%);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .socialshare .tooltiptext{
+     visibility: hidden;
+     width: 350px;
+     height: 60px;
+     background-color: hsl(217, 19%, 35%);
+     border-radius: 0px 0px 6px 6px;
+     padding: 0 0;
+     position: absolute;
+     z-index: 0;
+     left: 26px;
+     top: 420px;
+     color: hsl(214, 17%, 51%);
+     letter-spacing: 4px;
+     margin-bottom: 20px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     transition: 0.5s;
+  }
+
+   .socialshare:hover .tooltiptext {
+     visibility: visible;
+   }
+   .tooltiptext span {
+       margin-left: 15px;
+       padding-top: 1px;
+   }
+  .tooltiptext img {
+     width: 15px;
+     height: 15px;
+     margin: 0 3px;
+  }
+
+
+}
